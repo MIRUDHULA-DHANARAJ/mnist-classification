@@ -107,6 +107,8 @@ type(img)
 
 img = image.load_img('/content/six.png')
 plt.imshow(img)
+print("Mirudhula D")
+print("212221230060")
 img_tensor = tf.convert_to_tensor(np.asarray(img))
 img_28 = tf.image.resize(img_tensor,(28,28))
 img_28_gray = tf.image.rgb_to_grayscale(img_28)
@@ -115,10 +117,14 @@ x_single_prediction = np.argmax(model.predict(img_28_gray_scaled.reshape(1,28,28
 
 
 print(x_single_prediction)
+print("Mirudhula D")
+print("212221230060")
 plt.imshow(img_28_gray_scaled.reshape(28,28),cmap='gray')
 
 img1 = image.load_img('/content/zero.jfif')
 plt.imshow(img1)
+print("Mirudhula D")
+print("212221230060")
 img_tensor1 = tf.convert_to_tensor(np.asarray(img1))
 img_28_gray1 = tf.image.resize(img_tensor1,(28,28))
 img_28_gray1 = tf.image.rgb_to_grayscale(img_28_gray1)
@@ -128,7 +134,10 @@ img_28_gray_inverted_scaled1 = img_28_gray_inverted1.numpy()/255.0
 x_single_prediction1 = np.argmax(model.predict(img_28_gray_inverted_scaled1.reshape(1,28,28,1)),axis=1)
 
 print(x_single_prediction1)
+print("Mirudhula D")
+print("212221230060")
 plt.imshow(img_28_gray_inverted_scaled1.reshape(28,28),cmap='gray')
+
 ```
 
 ## OUTPUT
@@ -155,10 +164,10 @@ plt.imshow(img_28_gray_inverted_scaled1.reshape(28,28),cmap='gray')
 
 ### New Sample Data Prediction
 
+![image](https://github.com/user-attachments/assets/009304a8-066a-4f73-8730-b992be5d2113)
 
-![image](https://github.com/user-attachments/assets/8a04e3e0-453c-48a0-9a2f-889c67560eb1)
+![image](https://github.com/user-attachments/assets/d9f68531-77e4-4e8c-8c1b-7eaffaf71c81)
 
-![image](https://github.com/user-attachments/assets/8e634c1f-a3fa-4b13-a26f-effc3b3a90d8)
 
 
 ## RESULT
